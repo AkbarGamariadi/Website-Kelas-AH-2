@@ -1,0 +1,286 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "open sans", sans-serif;
+  background-image: url(none);
+}
+
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+.logo a {
+  font-size: 40px;
+  font-weight: bold;
+  float: left;
+  font-family: courier;
+  color: #183d3d;
+}
+
+.menu {
+  float: right;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 1;
+  border-bottom: 1px solid #304d30;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "comic sans ms";
+  color: #183d3d;
+}
+
+.kolom .deskripsi span {
+  color: #ffc436;
+}
+
+h2 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #183d3d;
+  width: 100%;
+  line-height: 50px;
+}
+
+a.tbl-biru {
+  background: #304d30;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-biru:hover {
+  background: #ffc436;
+  text-decoration: none;
+}
+
+a.tbl-hijau {
+  background: #ffc436;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-hijau:hover {
+  background: #304d30;
+  text-decoration: none;
+}
+
+p {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 991.98px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+/* anggota */
+.anggota h2 {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 0.5rem;
+  padding: 10px 0px 10px 0px;
+}
+
+.anggota p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.anggota .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.anggota .row .anggota-card {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.anggota .row .anggota-card img {
+  border-radius: 20%;
+  width: 80%;
+}
+
+.anggota .row .anggota-card .anggota-card-title {
+  margin-top: 1rem auto 1rem;
+}
+
+/* kontak */
+.kontak .tengah h2 {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 0.5rem;
+  padding: 10px 0px 10px 0px;
+}
+
+.kontak .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #222;
+}
+
+.kontak .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.kontak {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.kontak .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  padding-left: 2rem;
+}
+
+.kontak .input-group p {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1rem;
+  background: none;
+}
+
+/* footer */
+footer {
+  background-color: #183d3d;
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+  width: 1100px;
+}
+
+footer .social {
+  padding: 1rem 0;
+}
+
+footer .social a {
+  color: #ffffff;
+  margin: 1rem;
+}
+
+footer .social a:hover {
+  color: #304d30;
+}
+
+footer .link {
+  margin-bottom: 1.4rem;
+}
+
+footer .link a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .link a:hover {
+  color: #304d30;
+}
+
+footer .credit a {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+/* laptop */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
